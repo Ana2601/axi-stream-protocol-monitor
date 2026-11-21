@@ -6,6 +6,8 @@ A passive verification IP that monitors an AXI-Stream channel and flags
 protocol violations in real time — the reusable building block for UVM-style
 environments, 100% M1-native.
 
+![Architecture](docs/diagrams/architecture.svg)
+
 ## What was built
 
 - **VIP**: `vip/axis_stream_monitor.py` — free-running passive monitor that
@@ -64,6 +66,12 @@ vip/     protocol monitor (passive checker)
 tb/      master BFM + positive/negative tests
 run_sim.sh
 ```
+
+## Test run
+
+Output of the CI command (`./run_sim.sh`), captured from a local run:
+
+![Test run](docs/screenshots/test_run.svg)
 
 ## Setup
 
